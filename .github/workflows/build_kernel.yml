@@ -11,7 +11,7 @@ jobs:
     - name: Init Repo
       run: |
         cd ~
-        git clone https://github.com/Makiras/op5.git -b makiras --depth=1 
+        git clone https://github.com/1498610052/sagit-10.git -b makiras --depth=1 
     - name: Build With Shell
       run: |
         cd ~/op5
@@ -26,6 +26,6 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: blu_spark_makiras_modified.zip
+        name: Mi6-10.zip
         path: /home/runner/AnyKernel/
 
