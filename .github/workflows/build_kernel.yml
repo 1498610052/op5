@@ -2,7 +2,7 @@ name: Build Kernel H2OS
 on:
   push:
     branches:    
-      - makiras
+      - demon
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
     - name: Init Repo
       run: |
         cd ~
-        git clone https://github.com/1498610052/sagit-10.git -b makiras --depth=1 
+        git clone https://github.com/1498610052/sagit-10.git -b demon --depth=1 
     - name: Build With Shell
       run: |
         cd ~/op5
